@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/loginstyle.css' />
+  </head>
+  <dic class = banner>
+    <img src='/images/Disability Banner.png'>
+  </div>
+  <center>
+  <body>
+    <h1><%= title %></h1>
+    <p>Please log in to <%= title %></p>
+
+    <div><%= message %></div><br>
+
+    <form method="post" action="/user/auth">
+      User Name: <input type="text" name="username" style="background-color:#FFFFFF;"><br>
+      Password   :  <input type="password" name="password" style="background-color:#FFFFFF;"><br>
+      <button>Login</button>
+    </form>
+  </body>
+  </center>
+</html>

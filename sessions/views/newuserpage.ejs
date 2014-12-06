@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <div><%= message %></div><br>
+
+    <form method="post" action="/user/admin/create">
+      User Name: <input type="text" name="username"> <br>
+      Password:  <input type="password" name="password"> <br>
+      Is Admin:  <br>
+      <input type="radio" name="admin" value='yes'>Yes<br>
+      <input type="radio" name="admin" value='no'>No<br>
+      <button>Create New User</button>
+    </form>
+  </body>
+</html>

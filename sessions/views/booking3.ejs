@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/mainpage.css' />
+  </head>
+  <div class=banner>
+    <img src='../public/images/Disability Banner.png'>
+    <text>Logged in as: <%= username %></text>
+    <img src='../public/images/Home Button.png' height="50px" width="50px" onclick = "logout()">
+      <script>
+        function logout(){
+          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
+          if(r == true)
+            document.location.href = "login";
+        }
+      </script>
+    <img src='../public/images/Settings.png' height="50px" width="50px" onclick = "logout()">
+      <script>
+        function logout(){
+          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
+          if(r == true)
+            document.location.href = "login";
+        }
+      </script>
+    <button onclick = "logout()">Log Out</button>
+      <script>
+        function logout(){
+          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
+          if(r == true)
+            document.location.href = "login";
+        }
+      </script>
+  </div>
+  <center>
+  <body>
+    <h1><%= title %></h1>
+    <p>Please fill out the following for your class<%= title %></p>
+    <form method="post" action="/main/auth"><font color = 'black'>
+      Select a Test Time <input type="text" name="username" style = "color: #000000; background-color: #FFFFFF"> <br>
+      <button>Next</button>
+      <button>cancel</button>
+    </form>
+    </center>
+
+    <div><%= message %></div><br>
+
+    <p>%></p>
+  </body>
+  </center>
+</html>
