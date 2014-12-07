@@ -1,6 +1,12 @@
+div.banner{
+	position: absolute;
+  position: top;
+}
+
 body {
-  padding: 50px;
+  position: relative;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
 }
 
 a {
