@@ -46,7 +46,8 @@
   background-color: #800000;
   color: white;
   right: 1em;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #customers {

@@ -2,17 +2,22 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/mainpage.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/sidebar.css' />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="/sidebar.js"></script>
   </head>
-  <div class=banner>
+  <div id='banner'>
     <img src='/images/Disability Banner.png'>
+    </div>
+    <div id='bannertxt'>
     <text>Logged in as: <%= username %></text>
-    <img src='/images/Home Button.png' height="50px" width="50px" onclick = "logout()">
+    </div>
+    <div id='banner2'>
+    <img src='/images/Home Button.png' height="50px" width="50px" onclick = "home()">
       <script>
-        function logout(){
-          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
-          if(r == true)
-            document.location.href = "login";
+        function home(){
+            document.location.href = "main";
         }
       </script>
     <img src='/images/Settings.png' height="50px" width="50px" onclick = "logout()">
@@ -23,6 +28,8 @@
             document.location.href = "login";
         }
       </script>
+    </div>
+    <div id='banner3'>
     <button onclick = "logout()">Log Out</button>
       <script>
         function logout(){
@@ -32,20 +39,60 @@
         }
       </script>
   </div>
+    <div id='sidebar'>
+    <ul>
+       <li class='active'><a href='/user/main'>Home</a></li>
+       <li class='has-sub'><a href='#'><span>Book an Exam</span></a>
+          <ul>
+             <li class='has-sub'><a href='#'><span>Test</span></a>
+                <ul>
+                   <li><a href='#'>Select a Test Time</a></li>
+                   <li><a href='#'>View Accomodations</a></li>
+                   <li><a href='#'>Confirm Instructor Information</a></li>
+                   <li><a href='#'>Confirm</a></li>
+                </ul>
+             </li>
+             <li><a href='#'>Final</a></li>
+          </ul>
+       </li>
+       <li class='has-sub'><a href='#'><span>Notes</span></a>
+          <ul>
+             <li><a href='#'>325</a></li>
+             <li><a href='#'>326</a></li>
+             <li><a href='#'>420</a></li>
+          </ul>
+       </li>
+    </ul>
+  </div>
+</ul>
+</div>
+  <body>
+    <div id='left'>
+      <p> </p>
+    </div>
+    </div>
+    <div id='right'>
+      <p> </p>
+    </div>
+    <div id='formBox'>
   <center>
   <body>
+  <div id='left'>
+      <p> </p>
+    </div>
+    </div>
+    <div id='right'>
+      <p> </p>
+    </div>
+    <div id='formBox'>
     <h1><%= title %></h1>
     <p>Please fill out the following for your class<%= title %></p>
-    <form method="post" action="/main/auth"><font color = 'black'>
-      Select a Test Time <input type="text" name="username" style = "color: #000000; background-color: #FFFFFF"> <br>
+    <form method="post" action="/main/auth"><font color = 'white'>
+      Select a Test Time <br><input type="text" name="username" style = "color: #000000; background-color: #FFFFFF"> <br>
       <button>Next</button>
       <button>cancel</button>
     </form>
     </center>
-
-    <div><%= message %></div><br>
-
-    <p>%></p>
   </body>
   </center>
 </html>
