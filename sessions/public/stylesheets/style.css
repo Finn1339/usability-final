@@ -45,7 +45,8 @@
   top: 0px;
   background-color: #800000;
   color: white;
-  width: 61em;
+  right: 1em;
+  padding: 1em;
 }
 
 #customers {
