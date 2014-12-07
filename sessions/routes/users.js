@@ -105,4 +105,60 @@ router.get('/online', function(req, res) {
   res.render('online', { title : 'Users Online',
                          users : online });
 });
+
+router.get('/accomodations', function(req, res) {
+  res.render('AccomodationLetters', { title : 'Accomodations',
+                                      users : online });
+});
+
+router.get('/bookingatest', function(req, res) {
+  res.render('bookingATest', { title : 'Booking a Test',
+                               users : online });
+});
+
+router.get('/booking2', function(req, res) {
+  res.render('booking2', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/booking3', function(req, res) {
+  res.render('booking3', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/booking4', function(req, res) {
+  res.render('booking4', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/booking4', function(req, res) {
+  res.render('booking4', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/booking5', function(req, res) {
+  res.render('booking5', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/bookingFinals', function(req, res) {
+  res.render('booking3', { title : 'Booking a Test',
+                         users : online });
+});
+
+router.get('/notes', function(req, res) {
+  res.render('notes', { title : 'Veiw Notes',
+                         users : online });
+});
+
+router.get('/notes2', function(req, res) {
+  res.render('notes 2', { title : 'View Notes',
+                         users : online });
+});
+
+router.get('/notes3', function(req, res) {
+  res.render('notes3', { title : 'View Notes',
+                         users : online });
+});
+
 module.exports = router;
