@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/mainpage.css' />
+  </head>
+  <div class=banner>
+    <img src='/images/Disability Banner.png'>
+    <text>Logged in as: <%= username %></text>
+    <img src='/images/Home Button.png' height="50px" width="50px" onclick = "home()">
+      <script>
+        function home(){
+            document.location.href = "main";
+        }
+      </script>
+    <img src='/images/Settings.png' height="50px" width="50px" onclick = "logout()">
+      <script>
+        function logout(){
+          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
+          if(r == true)
+            document.location.href = "login";
+        }
+      </script>
+    <button onclick = "logout()">Log Out</button>
+      <script>
+        function logout(){
+          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
+          if(r == true)
+            document.location.href = "login";
+        }
+      </script>
+  </div>
+<head>
+<style>
+
+#sidebar {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 15%;
+    border-collapse: collapse;
+}
+
+#sidebar td, #sidebar th {
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 3px 7px 2px 7px;
+    padding-left: 5px;
+
+}
+
+#sidebar td {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #00000;
+    color: black;
+}
+
+
+#sidebar th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #B52400;
+    color: black;
+}
+
+#sidebar tr.alt td {
+    color: #000000;
+    background-color: #D53F00;
+}
+</style>
+</head>
+<body>
+
+<table id="sidebar">
+  <tr>
+    <th>Back to Main Menu</th>
+  </tr>
+
+  <tr>
+    <td>Book a Test</td>
+  
+  </tr>
+    <td>Notes</td>
+ 
+  </tr>
+
+  <tr>
+    <td>View Your Accommodations</td>
+  <tr>
+</table>
+
+</body>
+
+<head>
+
+<center>
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+#customers td, #customers th {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+}
+
+#customers th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+
+#customers tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+</style>
+</head>
+<body>
+
+<table id="customers">
+  <tr>
+    <th>Course</th>
+    <th>Accommodations</th>
+    <th>Generate PDF</th>
+  </tr>
+  <tr>
+    <td>325</td>
+    <td>Accommodations for CmpSci 325 course. Need extra 30 min to complete midterm</td>
+    <td>Generate</td>
+  </tr>
+  <tr class="alt">
+    <td>326</td>
+    <td>Acommodation for CmpSci 326</td>
+    <td>Generate</td>
+  </tr>
+  <tr>
+    <td>420</td>
+    <td>Accommodation for 420 course</td>
+    <td>Generate</td>
+  </tr>
+</table>
+
+</body>
+</center>
+</html>
