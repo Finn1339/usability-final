@@ -102,63 +102,113 @@ router.get('/main', function(req, res) {
 });
 
 router.get('/online', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('online', { title : 'Users Online',
                          users : online });
 });
 
 router.get('/accomodations', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('AccomodationLetters', { title : 'Accomodations',
-                                      users : online });
+                                      username : user.username });
 });
 
 router.get('/bookingatest', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('bookingATest', { title : 'Booking a Test',
-                               users : online });
+                               username : user.username });
 });
 
 router.get('/booking2', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('booking2', { title : 'Booking a Test',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/booking3', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('booking3', { title : 'Booking a Test',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/booking4', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('booking4', { title : 'Booking a Test',
-                         users : online });
-});
-
-router.get('/booking4', function(req, res) {
-  res.render('booking4', { title : 'Booking a Test',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/booking5', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('booking5', { title : 'Booking a Test',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/bookingFinals', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('booking3', { title : 'Booking a Test',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/notes', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('notes', { title : 'Veiw Notes',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/notes2', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('notes 2', { title : 'View Notes',
-                         users : online });
+                         username : user.username });
 });
 
 router.get('/notes3', function(req, res) {
+  var user = req.session.user;
+  if (user === undefined || online[user.uid] === undefined) {
+    req.flash('auth', 'Not logged in!');
+    res.redirect('/user/login');
+  }
   res.render('notes3', { title : 'View Notes',
-                         users : online });
+                         username : user.username });
 });
 
 module.exports = router;

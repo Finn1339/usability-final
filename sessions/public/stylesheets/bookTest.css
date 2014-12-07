@@ -1,0 +1,27 @@
+#banner{
+  position: absolute;
+  position: top;
+  width: 100%;
+  height: auto;
+}
+
+button{
+  position: relative;
+}
+
+body {
+  position: relative;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  margin: 0px;
+  border: 0px;
+  left: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#mainText{
+
+}
