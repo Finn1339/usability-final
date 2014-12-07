@@ -22,10 +22,10 @@
 
 #formBox{
   position: absolute;
-  left: 150px;
+  right: 15px;
   background-color: #800000;
   color: white;
-  width: 1025px;
+  width: 1500px;
 }
 
 body {

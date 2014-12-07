@@ -4,15 +4,15 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <div class=banner>
+    <div id='banner'>
     <img src='/images/Disability Banner.png'>
     <text>Logged in as: <%= username %></text>
-    <img src='/images/Home Button.png' height="50px" width="50px" onclick = "logout()">
+    </div>
+    <div id='banner2'>
+    <img src='/images/Home Button.png' height="50px" width="50px" onclick = "home()">
       <script>
-        function logout(){
-          var r = confirm("Are You Sure You Wish to Log Out?\nEither OK or Cancel.");
-          if(r == true)
-            document.location.href = "login";
+        function home(){
+            document.location.href = "main";
         }
       </script>
     <img src='/images/Settings.png' height="50px" width="50px" onclick = "logout()">
@@ -23,6 +23,8 @@
             document.location.href = "login";
         }
       </script>
+    </div>
+    <div id='banner3'>
     <button onclick = "logout()">Log Out</button>
       <script>
         function logout(){
@@ -32,8 +34,32 @@
         }
       </script>
   </div>
-  <center>
   <body>
+    <div id='left'>
+      <p> </p>
+    </div>
+    </div>
+    <div id='right'>
+      <p> </p>
+    </div>
+    <table id="sidebar">
+  <tr>
+    <th>Back to Main Menu</th>
+  </tr>
+
+  <tr>
+    <td>Book a Test</td>
+  
+  </tr>
+    <td>Notes</td>
+ 
+  </tr>
+
+  <tr>
+    <td>View Your Accommodations</td>
+  <tr>
+</table>
+<center>
     <h1><%= title %></h1>
     <p>Class Name<%= title %></p>
     <form method="post" action="/main/auth"><font color = 'black'>
@@ -41,10 +67,6 @@
       <button>Request notes</button>
     </form>
     </center>
-
-    <div><%= message %></div><br>
-
-    <p>%></p>
   </body>
   </center>
 </html>

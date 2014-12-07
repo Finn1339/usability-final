@@ -3,9 +3,17 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/sidebar.css' />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="/sidebar.js"></script>
   </head>
   <div id='banner'>
     <img src='/images/Disability Banner.png'>
+    </div>
+    <div id='otherImage'>
+      <img src='/images/skyline.jpg' height="99px" width="600px">
+    </div>
+    <div id='bannertxt'>
     <text>Logged in as: <%= username %></text>
     </div>
     <div id='banner2'>
@@ -34,6 +42,33 @@
         }
       </script>
   </div>
+    <div id='sidebar'>
+    <ul>
+       <li class='active'><a href='/user/main'>Home</a></li>
+       <li class='has-sub'><a href='#'><span>Book an Exam</span></a>
+          <ul>
+             <li class='has-sub'><a href='#'><span>Test</span></a>
+                <ul>
+                   <li><a href='#'>Select a Test Time</a></li>
+                   <li><a href='#'>View Accomodations</a></li>
+                   <li><a href='#'>Confirm Instructor Information</a></li>
+                   <li><a href='#'>Confirm</a></li>
+                </ul>
+             </li>
+             <li><a href='#'>Final</a></li>
+          </ul>
+       </li>
+       <li class='has-sub'><a href='#'><span>Notes</span></a>
+          <ul>
+             <li><a href='#'>325</a></li>
+             <li><a href='#'>326</a></li>
+             <li><a href='#'>420</a></li>
+          </ul>
+       </li>
+    </ul>
+  </div>
+</ul>
+</div>
   <body>
     <div id='left'>
       <p> </p>
@@ -42,23 +77,6 @@
     <div id='right'>
       <p> </p>
     </div>
-    <table id="sidebar">
-  <tr>
-    <th>Back to Main Menu</th>
-  </tr>
-
-  <tr>
-    <td>Book a Test</td>
-  
-  </tr>
-    <td>Notes</td>
- 
-  </tr>
-
-  <tr>
-    <td>View Your Accommodations</td>
-  <tr>
-</table>
     <div id='formBox'>
       <center>
       <h1>Where To Find Us</h1>
