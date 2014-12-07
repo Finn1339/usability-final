@@ -1,17 +1,13 @@
-div.banner{
+#banner{
 	position: absolute;
   position: top;
+  top: -106px;
+  background-color: #800000;
+  width: 100%;
 }
 
 button{
 	position: relative; top: 0px;
-}
-
-#buttonBox{
-  position: absolute;
-  background-color: #C8C8E6;
-  width: 150px;
-  height: 450px;
 }
 
 #formBox{
@@ -24,10 +20,12 @@ button{
 
 body {
   position: relative;
+  top: 106px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0px;
   margin: 0px;
   border: 0px;
+  background-color: #CCCCFF;
 }
 
 a {

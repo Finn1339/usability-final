@@ -1,12 +1,19 @@
-div.banner{
+#banner{
 	position: absolute;
   position: top;
+  top: -106px;
+  background-color: #800000;
+  width: 100%;
 }
 
 body {
   position: relative;
+  top: 106px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
   margin: 0px;
+  border: 0px;
+  background-color: #CCCCFF;
 }
 
 a {
