@@ -1,48 +1,44 @@
 
 #sidebar {
     position: relative;
-    top: 100px;
+    top: 113px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     width: 25%;
     border-collapse: collapse;
 }
 
 #sidebar td, #sidebar th {
-    position: relative;
-    top: 100px;
     font-size: 1em;
     border: 1px solid black;
     padding: 3px 7px 2px 7px;
     padding-left: 5px;
+    padding-right: 5px;
 
 }
 
 #sidebar td {
-    position: relative;
-    top: 100px;
     font-size: 1.1em;
     text-align: left;
     padding-top: 5px;
     padding-bottom: 4px;
     background-color: #00000;
     color: black;
+    padding-right: 5px;
 }
 
 
 #sidebar th {
-    position: relative;
-    top: 100px;
     font-size: 1.1em;
     text-align: left;
     padding-top: 5px;
     padding-bottom: 4px;
     background-color: #B52400;
     color: black;
+    padding-right: 5px;
 }
 
 #sidebar tr.alt td {
-    position: relative;
-    top: 100px;
     color: #000000;
     background-color: #D53F00;
+    padding-right: 5px;
 }
