@@ -1,12 +1,25 @@
-#banner{
+div.banner{
 	position: absolute;
   position: top;
-  width: 100%;
-  height: auto;
 }
 
 button{
-	position: relative;
+	position: relative; top: 0px;
+}
+
+#buttonBox{
+  position: absolute;
+  background-color: #C8C8E6;
+  width: 150px;
+  height: 450px;
+}
+
+#formBox{
+  position: absolute;
+  left: 150px;
+  background-color: #800000;
+  color: white;
+  width: 1025px;
 }
 
 body {

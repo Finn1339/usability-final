@@ -4,7 +4,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/mainpage.css' />
   </head>
-  <div class=banner>
+  <div id='banner'>
     <img src='/images/Disability Banner.png'>
     <text>Logged in as: <%= username %></text>
     <img src='/images/Home Button.png' height="50px" width="50px" onclick = "home()">
@@ -30,14 +30,13 @@
         }
       </script>
   </div>
-  <center>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
-    <div><%= message %></div><br>
-
-    <p>username: <%= username %></p>
+    <div id='formBox'>
+      <center>
+      <h1>Where To Find Us</h1>
+      <img src="/images/whitmore.jpg" width="700px" height="550px">
+      <p>Whitmore 181 PRESIDENTS DR zip:01003-9313</p>
+      </center>
+    </div>
   </body>
-  </center>
 </html>
